@@ -1,0 +1,44 @@
+1. Goto /home/hduser directory and Create 2 files namely cust1.txt and cust2.txt with the first 10 lines copied from /home/hduser/hive/data/custs and last 10 lines 
+copied from /home/hduser/hive/data/custs.
+
+head /home/hduser/hive/data/custs >> /home/hduser/cust1.txt
+tail /home/hduser/hive/data/custs >> /home/hduser/cust2.txt
+
+2.Create a file namely samplefile.txt using vi editor
+
+touch sample
+
+a. Type/copy 10 lines of some content
+
+type anything for typing directly (or) head -10 >> sample
+
+b. Goto line 5 and remove line 5 to 7 using command.
+
+vi sample
+5 (Press enter it goes to line 5)
+dd (to delete the present line)
+
+c. Goto last line and copy last line to first line and delete the last line manually.
+
+do it manually inside the vi editor
+
+d. Find for a particular word inside the file
+
+get inside the vi sample
+press esc then type / then type the required word or the pattern.
+
+e. Undo the last action you did
+
+vi sample
+press esc+u
+
+f. Save and quit the file
+
+press esc wq
+
+g. Open the file again, Delete 2 words in the last line and quit without saving
+
+vi sample
+press esc+dw two times
+then esc q! to quit without saving
+ 
